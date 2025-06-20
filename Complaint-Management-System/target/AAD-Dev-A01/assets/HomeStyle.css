@@ -1,0 +1,95 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #ffffff 0%, #cccccc 100%); /* white to light gray */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-card, .signup-card {
+    width: 100%;
+    max-width: 450px;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.95); /* almost white */
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.card-header-title,
+.card-title {
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: #222; /* dark gray/black */
+}
+
+.form-control {
+    border-radius: 0.5rem;
+    padding: 0.85rem 1rem;
+    border: 1px solid #888; /* medium gray */
+    background-color: #fff; /* white background */
+    transition: all 0.3s ease;
+    color: #111; /* text black */
+}
+
+.form-control:focus {
+    border-color: #000; /* black border on focus */
+    box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.15); /* subtle black shadow */
+    outline: none;
+}
+
+.form-label {
+    font-weight: 500;
+    color: #444; /* dark gray */
+}
+
+.btn-primary {
+    padding: 0.85rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    background-color: #000; /* black button */
+    color: #fff; /* white text */
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    background-color: #222; /* dark gray on hover */
+}
+
+.alert {
+    border-radius: 0.5rem;
+    background-color: #eee; /* light gray background */
+    color: #000; /* black text */
+    border: 1px solid #ccc;
+}
+
+.text-center a {
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.text-center a:hover {
+    text-decoration: underline;
+    opacity: 0.7;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
