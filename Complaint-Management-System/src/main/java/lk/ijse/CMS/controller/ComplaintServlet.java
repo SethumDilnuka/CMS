@@ -11,7 +11,7 @@ import lk.ijse.CMS.model.Complaint;
 import lk.ijse.CMS.model.User;
 
 import java.io.IOException;
-//import lk.ijse.CMS.dao.CmplainDAO;
+
 @WebServlet("/complaints")
 public class ComplaintServlet extends HttpServlet {
     private CmplainDAO complaintDAO;
